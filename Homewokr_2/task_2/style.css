@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFE2C4;
+    width: 100%;
+    height: 20vh;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: #FE0000;
+   
+    
+    
+}
+
+.block:hover{
+    background-color: #808080;
+    border-radius: 50%;
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    overflow: hidden;
+ 
+}
+.main{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+    height: 100vh;
+}
+
+.widgets-header{
+    background-color: #216ABB;
+
+    width: 100%;
+    height: 30vh;
+}
+
+.widgets{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block{
+    background-color: #16457A;
+    width: 30%;
+    height: 25vh;
+}
+
+.content{
+    background-color: #216ABB;
+    width: 100%;
+    height: 35vh;
+}
+
+.widgets-header, .block,  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1em;
+}

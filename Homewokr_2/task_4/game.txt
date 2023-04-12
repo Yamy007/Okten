@@ -1,0 +1,148 @@
+1.#pond {
+  display: flex;
+justify-content: flex-end;
+}
+
+2.#pond {
+  display: flex;
+justify-content: center;
+}
+
+3.#pond {
+  display: flex;
+justify-content: space-around;
+}
+
+4.#pond {
+  display: flex;
+justify-content: space-between;
+}
+
+5.#pond {
+  display: flex;
+align-items: flex-end;
+}
+
+6.#pond {
+  display: flex;
+justify-content:center;
+align-items:center;
+}
+
+7.#pond {
+  display: flex;
+justify-content:space-around;
+align-items:flex-end;
+}
+
+8.#pond {
+  display: flex;
+flex-direction:row-reverse;
+}
+
+9.#pond {
+  display: flex;
+flex-direction:column;
+}
+
+10.#pond {
+  display: flex;
+justify-content:start;
+flex-direction:row-reverse;
+}
+
+11.#pond {
+  display: flex;
+flex-direction:column;
+justify-content:end;
+}
+
+12.#pond {
+  display: flex;
+justify-content:space-between;
+flex-direction:column-reverse;
+}
+
+13.#pond {
+  display: flex;
+justify-content:center;
+flex-direction:row-reverse;
+align-items:flex-end;
+}
+
+14.#pond {
+  display: flex;
+}
+
+.yellow {
+order:2;
+}
+
+15.#pond {
+  display: flex;
+}
+
+.red {
+order:-2;
+}
+
+16.#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+align-self:flex-end;
+}
+
+17.#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+order:2;
+align-self:flex-end;
+}
+
+18.#pond {
+  display: flex;
+flex-wrap:wrap;
+}
+
+19.#pond {
+  display: flex;
+flex-direction:column;
+flex-wrap:wrap;
+}
+
+20.#pond {
+  display: flex;
+flex-flow:column wrap;
+}
+
+21.#pond {
+  display: flex;
+  flex-wrap: wrap;
+ align-content: flex-start;
+}
+
+22.#pond {
+  display: flex;
+  flex-wrap: wrap;
+align-content:flex-end;
+}
+
+23.#pond {
+  display: flex;
+  flex-wrap: wrap;
+flex-direction:column-reverse;
+align-content:center;
+}
+
+24.#pond {
+  display: flex;
+flex-flow:column-reverse wrap-reverse;
+justify-content:center;
+align-content:space-between;
+}

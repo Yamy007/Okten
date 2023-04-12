@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&family=Ultra&display=swap');
+body{
+    background-color: #F1F1F1;
+}
+
+h1{
+font-family: 'Ultra';
+
+font-weight: 400;
+font-size: 50px;
+line-height: 64px;
+
+color: #000000;
+}
+
+
+
+p, h2{
+    font-family: 'Uchen';
+ 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    
+    color: #000000;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.block{
+    width: 440px;
+    height: 530px;
+    background: #EEFFFD;
+    border: 2px solid #A8A4A4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.more{
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    margin-bottom: 127px;
+}
+
+.text{
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 115px;
+}
