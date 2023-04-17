@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<style>
+    
+    *{
+        margin: 0;
+        overflow: hidden;
+    }
+    .block_1 , .block_2 , .block_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .block_1{
+        height: 100vh;
+        width: 100vw;
+        background: #BD685E;
+    }
+    .block_2{
+        height: 100vh;
+        width: 100vw;
+        background: #93F3E1;
+    }
+    .block_3{
+        height: 100vh;
+        width: 100vw;
+        background: #5AD776;
+    }
+    a{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-decoration: none;
+        color:black;
+    }
+
+    /* html{
+        scroll-behavior: smooth;   це доволі специфічний варіант , який не працює в інших браузерах окрім хрома, також тут не можна налаштувати плавність (або я про це не знаю якщо все ж можна хотів би почути як саме)
+    } */
+    p{
+        font-size: 18px;
+        color: #fff;
+    }
+    h2{
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: #fff;
+    }
+</style>
+<body>
+    <div class = "block_1" id = "b_1">
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas.</p>
+        <a href="#b_2" class = "scroll-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+        </a>
+    </div>
+    <div class = "block_2" id = "b_2">
+        <a href="#b_1" class = "scroll-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+        </a>
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas.</p>
+        <a href="#b_3" class = "scroll-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+        </a>
+    </div>
+    <div class = "block_3" id = "b_3">
+        <h2>Section Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae tenetur nobis expedita inventore unde, ratione dolore exercitationem quod odio eveniet praesentium incidunt, numquam odit nisi neque sunt ipsum quas.</p>
+        <a href="#b_1" class = "scroll-link" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('a.scroll-link').click(function(e) {
+                e.preventDefault(); 
+                var target = $(this).attr('href'); 
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top 
+                }, 1000); 
+            });
+        });
+    </script>
+       
+</body>
+</html>

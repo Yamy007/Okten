@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 400;
+
+
+}
+
+main, header, section , article, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------block_1--------------------------------- */
+header{
+    height: 35vh;
+    width: 100vw;
+    background: #D9D9D9;
+}
+
+main{
+    height: 30vh;
+    width: 100vw;
+    background: #BAB5B5;
+}
+.two-blocks{
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    width: 100vw;
+}
+
+section{
+    height: 30vh;
+    width: 70vw;
+    background: #989595;
+}
+
+article{
+    height: 30vh;
+    width: 30vw;
+    background: #716B6B;
+}
+
+footer{
+    height: 5vh;
+    width: 100vw;
+    background: #D9D9D9;
+}
+
+/* ------------------------------------block_2--------------------------------- */
+
+.header_2{
+    height: 10vh;
+    width: 100vw;
+    background: #D9D9D9;
+}
+
+.three-blocks{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100vw;
+}
+
+.footer_2{
+    height: 10vh;
+    width: 100vw;
+    background: #B8B3B3;
+}
+
+.section_1{
+    height: 80vh;
+    width: 35vw;
+    background: #A9A8A8;
+}
+.section_2{
+    height: 80vh;
+    width: 35vw;
+    background: #817B7B;
+}
+.section_3{
+    height: 80vh;
+    width: 35vw;
+    background: #544F4F;
+}
