@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    width: 35vh;
+    border-radius: 2px;
+    height: 50vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 6vh;
+}
+
+.input-box{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.input-box input{
+    
+    border: 1px solid #DBDBDB;
+    padding: 5px;
+    border-radius: 2px;
+    height: 3vh;
+    margin-bottom: 1vh;
+}
+
+button{
+    background: #0095F6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    height: 4vh;
+    margin-top: 1vh;
+    font-size: 16px;
+    padding: 7px 16px;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+.line{
+    margin:2vh;
+   
+    border:none;
+    width: 12vh;
+    height: 1.1px;
+    background: #DBDBDB;
+    font-weight: 100;
+}
+
+.login-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+
+    
+}
+
+.login-facebook a{
+    letter-spacing: .4px;
+    text-decoration: none;
+    color: #575185;
+    font-size: 1.2em;
+ 
+}
+
+i{
+    margin-right: 5px;
+    font-size: 1.5em;
+    color:#575185
+}
+
+.forget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.forget a{
+    text-decoration: none;
+    color: #575185;
+    font-size: 1em;
+}
+
+
+.footer{
+    margin-top: 1.5vh;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    width: 35vh;
+    border-radius: 2px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h2{
+    color:black;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.footer  a{
+    text-decoration: none;
+    color: #0095F6;
+    font-size: 1.2em;
+   
+    margin-left: 8px;
+}

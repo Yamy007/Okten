@@ -1,0 +1,59 @@
+body{
+    background: #E9F3F3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+h2{
+    color: #CB3F1D;
+    margin: 0;
+}
+
+.anketa{
+    width: 40vw;
+    height: 35vh;
+    background: #99FB98;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+label{
+    margin-top: 5px;
+}
+.text-input{
+    width:15vw;
+}
+.input-box{
+ 
+    width: 38vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+.comp{
+    margin-top: 15px;
+}
+.btn{
+    margin-top: 2vh;
+}
+button{
+    
+    width: 10vw;
+    height: 3vh;
+    
+    
+    font-size: 1.2rem;
+}

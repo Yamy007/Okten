@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>login</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- font-family: 'Raleway', sans-serif;  background-color: darkcyan -->
+
+        <header>
+            <h2>Вхід в особистий кабінет</h2>
+        </header>
+        <main>
+            <form method="POST">
+                <div class="input-box">
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Логін або email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Пароль"
+                        required
+                    />
+                </div>
+                <div class="btn">
+                    <div class="checkbox">
+                        
+                        <label for="remember">Запам'ятати мене</label>
+                        <input type="checkbox" name="remember" id="remember" />
+                    </div>
+                    <button type="submit" name="submit">Вхід</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

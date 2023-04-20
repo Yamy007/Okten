@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background: #E9F3F3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-form{
+    width: 30vw;
+    height: 40vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.input-box-name{
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+    
+   
+    
+}
+
+.input-box-name input{
+    font-weight: 600;
+    width: 10.5vw;
+    height: 4vh;
+   
+    border: 1px solid #D0D0D0;
+    border-radius: 1.5px;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+    
+}
+
+input::-webkit-input-placeholder{
+     color: #9D9999; 
+    }
+
+.email{
+    width: 22vw;
+
+}
+.email input{
+    width: 22vw;
+    height: 4vh;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+
+.password{
+    width: 22vw;
+}
+
+input{
+    padding: 5px;
+    border: 1.7px solid #D0D0D0 !important;
+    font-weight: 600;
+
+}
+.password input{
+    width: 22vw;
+    height: 4vh;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+    
+}
+
+.help-text{
+    width: 22vw;
+
+}
+
+.help-text p{
+    font-size: .9rem;
+    color: rgb(71, 68, 68);
+    margin: 1vh 0;
+}
+
+
+.help-text span{
+    color: #000;
+    font-weight: 600;
+}
+
+button{
+    width: 22vw;
+    height: 4vh;
+    font-weight: 600;
+    background: #F9D600;
+    color: #000;
+    border: 1.7px solid #ECB900;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin: 1vh 0;
+}

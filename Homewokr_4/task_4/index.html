@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form class  =" anketa">
+        <div class="input-box">
+            <div class="heading"><h2>Заповніть поля анкети</h2></div>
+            <label>Ваше ім'я: <input class = "text-input" type = "text" name = "name" required></label>
+            <label>Ваше прізвище: <input class = "text-input" type = "text" name = "surname" required></label>
+            <label>Ваша стать: <input type = "radio" name = "gender"  value = "male" required> Жіноча  <input type = "radio" name = "gender"  value = "female" required> Чоловіча</label>
+            <label>Послугами якої сотової компанії Ви користуєтеся:</label>
+            <div class = "comp">
+                <label><input type = "checkbox" name = "comp" value = "KyivStar">KyivStar</label>
+                <label><input type = "checkbox" name = "comp" value = "MTS">MTS</label>
+                <label><input type = "checkbox" name = "comp" value = "Life">Life:)</label>
+                <label><input type = "checkbox" name = "comp" value = "PeopleNet">PeopleNet</label>
+                <label><input type = "checkbox" name = "comp" value = "Utel">Utel</label>
+            </div>
+            <div class="btn">
+
+                <button type = "submit"> Надіслати анкету</button>
+                <button type = "reset"> Очистити бланк</button>
+            </div>
+        </div>
+
+    </form>
+    
+</body>
+</html>
