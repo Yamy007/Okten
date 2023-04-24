@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+	box-sizing:border-box;
+}
+body{
+	height:100vh;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+}
+
+
+
+.block{
+	position:relative;
+	height:50vh;
+	width:16vw;
+	margin:6em;
+	background: rgba(217, 217, 217, 0.3);
+	border: 4px solid #554C4C;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding:4em;
+}
+
+div.block > h2{
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	margin:0;
+	color: #000000;
+}
+
+div.block > p{
+	margin:0;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	
+	color: #000000;
+}
+
+.circle{
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	background: white;
+	border: 4px solid #554C4C;
+	top:-5vh;
+	border-radius:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index: 100;
+	
+}
+#block_2{
+	
+ border: 4px solid #65856E;
+}
+
+#block_2 > .circle{
+	border: 4px solid #65856E;
+	
+}

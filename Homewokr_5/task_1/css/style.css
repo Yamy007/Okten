@@ -1,0 +1,39 @@
+body{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	background:#20242D;
+}
+
+
+*{
+	color:white
+}
+
+div{
+	background:black;
+	border-radius: 16px;
+	box-shadow: 2em 0 2em black;
+	margin:2em;
+}
+
+div.block_1 > ul > li:nth-child(2n){ /* even */
+	color:pink;
+}
+
+div.block_2 > ul >li:nth-child(2n+1){
+	color:red;
+}
+
+div.block_3 > ul > li:nth-child(2n+4)::after{
+	content: "!";
+}
+
+
+div.block_4 > ul > li:last-child{
+	color: purple; 
+}
+
+div.block_5 > ul > li:first-letter{
+	font-size:30px;
+	color:red;
+}
