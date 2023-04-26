@@ -7,7 +7,7 @@
 :books: My field of study in these courses.
 
 <div id="header" align="center">
-  <img src="https://github.com/Yamy007/Okten/blob/main/Html/Okten_2.jpg" width="1200"/>
+  <img src="https://github.com/Yamy007/Okten/blob/main/Html/language.jpg" width="1200"/>
 </div>
 
 
