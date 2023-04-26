@@ -1,13 +1,13 @@
 :desktop_computer: Okten course in Ua
 <div id="header" align="center">
-  <img src="https://github.com/Yamy007/Okten/blob/main/photo_2023-04-26_15-17-51.jpg" width="1200"/>
+  <img src="https://github.com/Yamy007/Okten/blob/main/Html/Okten_1.jpg" width="1200"/>
 </div>
 
 ---
 :books: My field of study in these courses.
 
 <div id="header" align="center">
-  <img src="https://github.com/Yamy007/Okten/blob/main/language.jpg" width="1200"/>
+  <img src="https://github.com/Yamy007/Okten/blob/main/Html/Okten_2.jpg" width="1200"/>
 </div>
 
 
