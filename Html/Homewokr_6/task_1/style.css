@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 99%;
+    height: 98vh;
+    display: grid;
+    grid-template-areas:
+    "header header header header" 
+    "main main main footer"
+    "c d e footer"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+header{
+    grid-area: header;
+    margin: .3em .3em   .3em .3em;
+
+  
+}
+main {
+    grid-area: main;
+    margin-right: .3em;
+    margin-bottom: .3em;
+    margin-left: .3em;
+    
+}
+footer{
+    grid-area: footer;
+    margin: 0  .3em .3em 0 ;
+}
+.c {
+    grid-area: c;
+
+    margin: 0 .3em .3em .3em;
+}
+
+.d {
+    grid-area: d;
+    margin-right: .3em;
+    margin-bottom: .3em;
+}
+
+.e {
+    grid-area: e;
+    margin-right: .3em;
+    margin-bottom: .3em;
+}
+
+header, main, footer, .c, .d, .e {
+    background: #D9D9D9;
+    font-size: 3em;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 978px) {
+    body{
+        width: 99%;
+        height: 98vh;
+        display: grid;
+        grid-template-areas:
+        "header header header " 
+        "main main main "
+        "c d e "
+        "footer footer footer "
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+     
+    }
+   
+    footer{
+        margin: 0 .3em .3em .3em;
+    }
+   
+}
