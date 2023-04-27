@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "Nav Nav Nav"
+    "first second third"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  10vh 80vh 10vh;
+}
+
+nav{
+    grid-area: Nav;
+    background: #D9D9D9;
+    
+}
+
+.first{
+    grid-area: first;
+    background: linear-gradient(0deg, #A9A8A8, #A9A8A8), #A9A8A8;
+}
+
+.second{
+    grid-area: second;
+    background: linear-gradient(0deg, #817B7B, #817B7B), #A9A8A8;
+}
+
+.third{
+    grid-area: third;
+    background: linear-gradient(0deg, #544F4F, #544F4F), #A9A8A8;
+}
+
+footer{
+    grid-area: footer;
+    background: #B8B3B3;
+
+}
+
+nav, section , footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
