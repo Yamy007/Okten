@@ -5,6 +5,10 @@ function square(a, b) {
 }
 
 console.log(square(5, 6));
+
+
+
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
 function circle(r) {
@@ -54,14 +58,14 @@ list('Hello');
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-function list2(text, num) {
+    function list2(text, num) {
 
-    document.write(`<ul>`);
-    for (let i = 0; i < num; i++) {
-        document.write(`<li>${text}</li>`);
+        document.write(`<ul>`);
+        for (let i = 0; i < num; i++) {
+            document.write(`<li>${text}</li>`);
+        }
+        document.write(`</ul>`);
     }
-    document.write(`</ul>`);
-}
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
