@@ -159,7 +159,7 @@ console.log(cards.filter(card => card.value === 'ace' && card.cardSuit === 'spad
 console.log(cards.filter(card => card.value ==="6"))
 console.log(cards.filter(card => card.color === "red"))
 console.log(cards.filter(card => card.cardSuit === "diamond"))
-console.log(cards.filter(card => card.cardSuit === "clubs" && card.value >= "9"))
+console.log(cards.filter(card => card.cardSuit === "clubs" && (card.value === "jack" || card.value === "queen" || card.value === "king" || card.value === "ace" || parseInt(card.value) >= 9)));
 
 // Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
 // {
