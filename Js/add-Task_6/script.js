@@ -62,10 +62,11 @@ const validationName = (str) => str.replaceAll(".",' ')
                                                                     .replaceAll("-", ' ')
                                                                     .replaceAll("_", ' ')
                                                                     .split(" ")
-                                                                    .join(" ")
+                                                                    .filter(x => ((x >= "a" && x <= "z") || (x >= "A" && x <= "Z"))  )
+                                                                    .join(' ')
 
 
-console.log(validationName("Hermione__Granger"))
+console.log(validationName("Hermione__Granger").length)
 
 
 
