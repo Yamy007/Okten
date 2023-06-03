@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Index.html</title>
+    </head>
+    <body>
+        <script>
+            // ==========================
+            // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки. Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію
+
+            let session = localStorage.getItem('session') || []
+            if (session) session = JSON.parse(session)
+
+            console.log(session)
+            const date = new Date()
+            const time = date.toLocaleTimeString()
+            const day = date.toLocaleDateString()
+
+            session.push({ time, day })
+            console.log(session)
+            localStorage.setItem('session', JSON.stringify(session))
+        </script>
+    </body>
+</html>
