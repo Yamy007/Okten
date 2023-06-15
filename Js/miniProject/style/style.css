@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+header {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #aba7a7;
+    align-items: center;
+}
+.logo {
+    font-size: 1.7rem;
+    width: 75%;
+    margin-left: 3em;
+}
+.navbar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    margin: 1em;
+    align-items: center;
+}
+.navbar > a {
+    margin: 1.5em;
+    font-size: 1.4rem;
+    transition: 0.5s;
+}
+.navbar > a:hover {
+    border-bottom: 2px solid black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+footer {
+    height: 7vh;
+    width: 100%;
+    border-top: 1px solid #aba7a7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    height: 86vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.active {
+    border-bottom: 2px solid black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.box {
+    width: 70%;
+    height: 25vh;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 5px #373737;
+    border-radius: 12px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    position: relative;
+}
+.btn {
+    outline: none;
+    background-color: #aba7a7;
+    width: 60%;
+    height: 1vh;
+    padding: 0.9em 2em;
+    border-radius: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: #cac5c5;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.down {
+    position: absolute;
+    top: 25vh;
+    left: 85%;
+}
+.down > h3 {
+    color: #aba7a7;
+}
+
+.wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.info {
+    grid-area: info;
+}
+.address {
+    grid-area: address;
+}
+.company {
+    grid-area: company;
+}
+.infoBtn {
+    grid-area: button;
+    outline: none;
+    outline: none;
+    background-color: #aba7a7;
+    width: 60%;
+    height: 1vh;
+    padding: 0.9em 2em;
+    border: none;
+    border-radius: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin: auto;
+}
+.infoBtn:hover {
+    background-color: #cac5c5;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.cart {
+    height: 79vh;
+    width: 50%;
+    box-shadow: 5px 5px 15px 5px #373737;
+    border-radius: 12px;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: 'info info' 'address company' 'button button';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.postPlace {
+    height: fit-content;
+    width: 70%;
+    box-shadow: 5px 5px 15px 5px #373737;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 12px;
+    justify-content: center;
+}
+.postPlace > div {
+    height: fit-content;
+}
+.container2 {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    align-items: center;
+    margin: auto;
+}
+.infoBox {
+    height: fit-content;
+    width: 80%;
+    padding: 2em;
+    box-shadow: 5px 5px 15px 5px #373737;
+    border-radius: 12px;
+}
+.commentCart {
+    height: fit-content;
+    display: block;
+}
