@@ -10,9 +10,9 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${url}`)
         container2.className = 'container2'
         let div = document.createElement('div')
         div.innerHTML = `<div class="infoBox">
-        <h2>Title: ${value.title}</h2>
         <h2>ID: ${value.id}</h2>
-        <h2>User ID ${value.userId}</h2>
+        <h3>User ID ${value.userId}</h3>
+        <h3>Title: ${value.title}</h3>
         <p>Body: ${value.body}</p>
         </div>
         <div class = 'comments' id = 'comment'></div>`
@@ -27,10 +27,10 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${url}`)
                     div.className = 'commentCart box'
                     div.innerHTML = `
                     <h2>ID: ${i.id}</h2>
-                    <h2>Post ID: ${i.postId}</h2>
-                    <h2>Name: ${i.name}</h2>
-              <h2>Email: ${i.email}</h2>
-              <h2>Body: ${i.body}</h2>`
+                    <h3>Post ID: ${i.postId}</h3>
+                    <h3>Name: ${i.name}</h3>
+              <h3>Email: ${i.email}</h3>
+              <p>Body: ${i.body}</p>`
                     comment.appendChild(div)
                 }
             })

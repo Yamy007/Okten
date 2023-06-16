@@ -45,7 +45,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${url}`)
 const currentUser = id => {
     let post = document.getElementById('post')
     if (post.style.display === 'none' || post.style.display === '') {
-        post.style.display = 'flex'
+        post.style.display = 'grid'
         fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             .then(value => value.json())
             .then(value => {
@@ -53,9 +53,9 @@ const currentUser = id => {
                 for (const i of value) {
                     let div = document.createElement('div')
                     div.className = 'box'
-                    div.innerHTML = `<div class="title"><h2>Title Post </h2><h2> ${i.title}</h2>
-                <a class="btn" href="post-details.html?id=${i.id}">More Info</a>
-                </div>`
+                    div.innerHTML = `<div class="title"><h2>Title Post </h2><h3> ${i.title}</h3></div>
+                <div class = 'linkBtn'><a class="btn" href="post-details.html?id=${i.id}">More Info</a></div>
+                `
                     post.appendChild(div)
                 }
             })
