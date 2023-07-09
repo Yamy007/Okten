@@ -1,0 +1,25 @@
+.wrapper {
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 12px;
+
+    margin: 1.2em;
+    display: flex;
+}
+
+.left {
+    width: 18vw;
+}
+
+.left > img {
+    object-fit: cover;
+    width: 18vw;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.right {
+    padding: 0.8em;
+    width: 12vw;
+    font-size: 1rem;
+}
