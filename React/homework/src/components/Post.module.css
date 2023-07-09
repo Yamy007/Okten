@@ -1,0 +1,30 @@
+.wrapper {
+    width: 15vw;
+    margin: 1.5em;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoBlock {
+    height: 80%;
+    width: 95%;
+    border-bottom: 1px solid silver;
+}
+
+.btn {
+    width: 7vw;
+    margin: 5px;
+    height: 4vh;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 12px;
+    transform: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    transform: 0.5s;
+}
