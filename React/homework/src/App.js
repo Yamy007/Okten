@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import Post from './components/Post'
+import Space from './components/Space.js'
 
-function App() {
-    const [post, setPost] = useState([])
+const App = () => {
+    const [space, setSpace] = useState([])
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts`)
+        fetch(`https://api.spacexdata.com/v3/launches/`)
             .then(value => value.json())
-            .then(value => setPost(value))
+            .then(value => setSpace(value))
     }, [])
     return (
         <div className="main">
-            {post.map(value => (
-                <Post post={value} key={value.id} />
-            ))}
+            {space
+                .filter(value => value.launch_year !== '2020')
+                .map(value => (
+                    <Space space={value} key={value.mission_name} />
+                ))}
         </div>
     )
 }
 
 export default App
-
-// з jsonplaceholder отримати всі пости в компоненту Posts.js
-// відобразити кожного інформацію (id,title) з кожного поста (компонента Post)
-// Зробити кнопку вибора поста, при натисканні на яку в Posts.js ви покажете детальну інфомацію про пост(всю інфу)
+// є API от SpaceX
+// https://api.spacexdata.com/v3/launches/
+// потрібно вивести всі запуски кораблів окрім 2020 року
+// репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
