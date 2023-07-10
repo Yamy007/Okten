@@ -1,27 +1,41 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import Space from './components/Space.js'
+import Post from './components/Post.js'
+import User from './components/Users.js'
 
 const App = () => {
-    const [space, setSpace] = useState([])
+    const [users, setUser] = useState([])
+    const [id, setId] = useState()
+    const [post, setPost] = useState([])
+
     useEffect(() => {
-        fetch(`https://api.spacexdata.com/v3/launches/`)
+        fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             .then(value => value.json())
-            .then(value => setSpace(value))
+            .then(value => setPost(value))
+    }, [id])
+
+    useEffect(() => {
+        fetch(`https://jsonplaceholder.typicode.com/users`)
+            .then(value => value.json())
+            .then(value => setUser(value))
     }, [])
     return (
         <div className="main">
-            {space
-                .filter(value => value.launch_year !== '2020')
-                .map(value => (
-                    <Space space={value} key={value.mission_name} />
-                ))}
+            {users.map(value => (
+                <>
+                    <User user={value} key={value.id} setId={setId} id={id} />
+                </>
+            ))}
+            {post.map(value => (
+                <Post post={value} key={value.id} />
+            ))}
         </div>
     )
 }
 
 export default App
-// є API от SpaceX
-// https://api.spacexdata.com/v3/launches/
-// потрібно вивести всі запуски кораблів окрім 2020 року
-// репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
+
+// вивести всіх юзерів з плайсхолдеру
+// в кожного юзера має бути кнопка яка буде показувати пости цього юзера
+
+// пости мають виводитись під компонетою Users (в App компоненті)
