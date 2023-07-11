@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import UsersComponent from "./components/UsersComponent"
 
 function App() {
+  const [post, setPost] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UsersComponent setPost = {setPost}/> 
+      {post?.map(value =>(
+        <div key ={value.id}>
+          <h2>id: {value.id}</h2>
+          <h2>userId: {value.userId}</h2>
+          <h2>title: {value.title}</h2>
+          <h2>body: {value.body}</h2>
+        </div>
+      ))}
+    </>
   );
 }
 
@@ -26,18 +23,10 @@ export default App;
 
 
 
-// property drill
 
-// Структура:
-// Головна компонента App. App робить запит на https://jsonplaceholder.typicode.com/users
-// В середині Апп лежить компонента Users яка відображає всіх отриманих в апп юзерів з плейсхолдеру
-// Кожен юзер - це компонента User, в якій є інші комоненти, а саме
-// UserDetails - яка відображає інформацію id,name,username,email,phone,website,
-// UserAddress - яка відображає інформацію street suite city,
-// Company - яка відображає name,catchPhrase,bs
 
 // state lifting
-// Є компонента Арр. В середині неї є UsersComponent, який отримує наданні з https://jsonplaceholder.typicode.com/users
+// Є компонента Арр. В середині неї є UsersComponent, який отримує данні з https://jsonplaceholder.typicode.com/users
 // Кожен юзер - окрема компонента UserComponent,в якій є кнопка show posts, при натисканні на яку робиться state lifting, а саме - в компоненті App відображаються пости того юзера, на кнопку якого клікнули.
 
 // context
